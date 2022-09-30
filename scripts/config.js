@@ -13,11 +13,12 @@ btnCalcular.addEventListener('click', () => {
     if (inputIdade.value > currentYear) {
         showResultado.innerHTML = `Erro: A idade informada é maior <br> que o ano atual ${currentYear}`
         showResultado.style.color = 'red'
+    } else if (inputIdade.value < 0) {
+        showResultado.innerHTML = `💀💀💀💀`
     } else {
         showResultado.innerHTML = `A idade é: ${result} anos.`
         showResultado.style.color = 'yellow'
     }
-
 
     inputIdade.value = ''
 
