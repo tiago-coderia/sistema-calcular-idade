@@ -3,6 +3,7 @@
     --color-light: #fff;
     --color-dark: #000; 
     --color-background: #222;
+    --color-sun: yellow;
 }
 
 * {
@@ -26,17 +27,22 @@ body {
 .container {
     width: 400px;
     min-height: 500px;
-    border: 1px solid var(--color-light);
     padding: 2rem;
     text-align: center;
-    border-radius: 2rem;
-    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.2);
+    border: 1px solid var(--color-light);
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    &:hover {
+        -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.8);
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.8);
+        border: 1px solid var(--color-sun);
+        border-radius: 2rem;
+    }
 }
 
 h1 {
